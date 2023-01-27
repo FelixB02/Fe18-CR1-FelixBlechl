@@ -1,0 +1,56 @@
+footer {
+    height: 10vh;
+    background-color: black;
+    margin-top: 10vh;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 3vh;
+}
+
+.footer {
+    color: white;
+    overflow: hidden;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.Copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.Copyright p {
+    padding-top: 2vh;
+    color: white;
+    padding-bottom: 0.5vh;
+}
+
+.symbols {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-facebook {
+    color: white;
+    background: black;
+    padding-right: 1vh;
+}
+
+.fa-youtube-play {
+    color: white;
+    background: black;
+    padding-right: 1vh;
+}
+
+.fa-instagram {
+    color: white;
+    background: black;
+    padding-right: 1vh;
+}
