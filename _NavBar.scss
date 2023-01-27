@@ -5,6 +5,19 @@
     padding-top: 4vh;
     align-items: center;
     padding-bottom: 3vh;
+    h1 {
+        font-family: 'Great Vibes', cursive;
+    }
+}
+
+.searchbar svg {
+    margin-left: 4vh;
+}
+
+.searchbar {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .heading {

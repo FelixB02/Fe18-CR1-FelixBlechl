@@ -12,6 +12,19 @@
   align-items: center;
   padding-bottom: 3vh;
 }
+.container-first-line h1 {
+  font-family: "Great Vibes", cursive;
+}
+
+.searchbar svg {
+  margin-left: 4vh;
+}
+
+.searchbar {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .heading {
   font-size: 2.3vh;
@@ -102,7 +115,7 @@ footer {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  gap: 8vh;
+  gap: 4vh;
 }
 
 .element {
@@ -131,7 +144,7 @@ footer {
   height: 8vh;
   display: flex;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 7%;
   opacity: 1;
   text-align: justify;
 }
