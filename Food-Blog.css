@@ -131,8 +131,9 @@ footer {
   height: 8vh;
   display: flex;
   justify-content: center;
-  padding-top: 9%;
+  padding-top: 5%;
   opacity: 1;
+  text-align: justify;
 }
 
 /*Media Querries for Phones and iPads*/
