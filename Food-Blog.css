@@ -152,6 +152,16 @@ li {
   padding-bottom: 2vh;
 }
 
+@media screen and (max-width: 480px) {
+  .containerRecipe {
+    width: 30vh;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 880px) {
+  .containerRecipe {
+    width: 40vh;
+  }
+}
 /* Styling the main content*/
 .container-pictures {
   margin: 5vh;
