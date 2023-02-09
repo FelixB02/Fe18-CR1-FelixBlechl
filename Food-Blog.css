@@ -168,7 +168,7 @@ li {
   }
 }
 /* Styling the main content*/
-.container-pictures {
+#container {
   margin: 5vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -186,30 +186,44 @@ li {
   width: 100%;
 }
 
-.element div {
+#second {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.619);
   width: 100%;
   bottom: 0;
 }
 
-.element div p {
+#para {
   color: white;
   font-size: 2vh;
   width: 100%;
   padding: 3vh 0;
 }
 
+#inputfield {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#inputfield p {
+  font-weight: bold;
+}
+
 /*Media Querries for Phones and iPads*/
 @media screen and (max-width: 480px) {
-  .container-pictures {
+  #container {
     grid-template-rows: repeat(9, 1fr);
     grid-template-columns: 1fr;
     gap: 2vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .container-pictures {
+  #container {
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 4vh;
