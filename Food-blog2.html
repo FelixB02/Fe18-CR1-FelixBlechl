@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -35,42 +36,96 @@
             <a href=""> Taqo</a>
             <a href=""> Desert</a>
         </nav>
-        <div id="container">
+        <div id="herosection">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div id="container">
 
+            </div>
+            <div id="inputfield">
+                <div>
+                    <p> Input text</p>
+                    <input type="text" id="text">
+                </div>
+                <div>
+                    <p> Input Picture</p>
+                    <input type="text" id="link">
+                </div>
+                <input type="submit" value="Add new element" id="btn2">
+            </div>
+            <footer>
+                <div class="footer">
+                    <a href=""> About</a>
+                    <p>|</p>
+                    <a href=""> Recipes</a>
+                    <p>|</p>
+                    <a href=""> FAQ</a>
+                    <p>|</p>
+                    <a href="https://codefactory.wien/en/contact-en/"> Contact Us</a>
+                </div>
+                <div class="sybols">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-youtube-play"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <div class="Copyright">
+                    <p> Copyright &copy; 2022 Felix Blechl</p>
+                </div>
+            </footer>
         </div>
-        <div id="inputfield">
-            <div>
-                <p> Input text</p>
-                <input type="text" id="text">
-            </div>
-            <div>
-                <p> Input Picture</p>
-                <input type="text" id="link">
-            </div>
-            <input type="submit" value="Add new element" id="btn2">
-        </div>
-        <footer>
-            <div class="footer">
-                <a href=""> About</a>
-                <p>|</p>
-                <a href=""> Recipes</a>
-                <p>|</p>
-                <a href=""> FAQ</a>
-                <p>|</p>
-                <a href="https://codefactory.wien/en/contact-en/"> Contact Us</a>
-            </div>
-            <div class="sybols">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-youtube-play"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-            <div class="Copyright">
-                <p> Copyright &copy; 2022 Felix Blechl</p>
-            </div>
-        </footer>
-    </div>
-    <script src="food-Blog.js">
-    </script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 3,
+                loop: true,
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+        <script src="food-Blog.js">
+        </script>
 </body>
 
 </html>
